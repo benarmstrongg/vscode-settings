@@ -1,0 +1,57 @@
+{
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "constant.language.boolean.false.ts",
+                "settings": {
+                    "foreground": "#FFCC66"
+                }
+            },
+            {
+                "scope": "constant.language.boolean.true.ts",
+                "settings": {
+                    "foreground": "#FFCC66"
+                }
+            },
+            {
+                "scope": "constant.numeric.decimal.ts",
+                "settings": {
+                    "foreground": "#FFCC66"
+                }
+            },
+            {
+                "scope": "constant.language.json.comments",
+                "settings": {
+                    "foreground": "#FFCC66"
+                }
+            }
+        ]
+    },
+    "editor.formatOnSave": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.quoteStyle": "double",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "redhat.telemetry.enabled": false,
+    "emmet.excludeLanguages": [
+        "typescriptreact"
+    ],
+    "remote.SSH.connectTimeout": 30,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "editor.renderWhitespace": "all",
+    "rust-analyzer.completion.callable.snippets": "none",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "window.zoomLevel": -1
+}
