@@ -32,6 +32,8 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.quoteStyle": "double",
+    "typescript.preferences.quoteStyle": "double",
+    "html.format.wrapAttributes": "force-aligned",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -39,9 +41,7 @@
         "**/.factorypath": true
     },
     "redhat.telemetry.enabled": false,
-    "emmet.excludeLanguages": [
-        "typescriptreact"
-    ],
+    "emmet.excludeLanguages": ["typescriptreact"],
     "remote.SSH.connectTimeout": 30,
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -53,5 +53,42 @@
     "[python]": {
         "editor.formatOnType": true
     },
-    "window.zoomLevel": -1
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "lldb.launch.expressions": "native",
+    "[swift]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vknabel.vscode-swiftformat"
+    },
+    "lldb.suppressUpdateNotifications": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": -1,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.confirmBeforeClose": "keyboardOnly"
+    // "editor.wordWrap": "bounded"
+    // "editor.wordWrapColumn": 80
 }
