@@ -1,157 +1,167 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-    "key": "cmd+/ cmd+/",
-    "command": "workbench.action.togglePanel"
-  },
-  {
-    "key": "cmd+j",
-    "command": "-workbench.action.togglePanel"
-  },
-  {
-    "key": "cmd+d",
-    "command": "-editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "cmd+d",
-    "command": "editor.action.formatDocument",
-    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  {
-    "key": "shift+alt+f",
-    "command": "-editor.action.formatDocument",
-    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  {
-    "key": "cmd+]",
-    "command": "-editor.action.indentLines",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+]",
-    "command": "workbench.action.terminal.kill"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-debug.removeBreakpoint",
-    "when": "breakpointsFocused && !breakpointInputFocused"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-notebook.cell.delete",
-    "when": "notebookEditable && notebookEditorFocused && !inputFocus"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-deleteAllLeft",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-debug.removeWatchExpression",
-    "when": "watchExpressionsFocused && !expressionSelected"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-notification.clear",
-    "when": "notificationFocus"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-remote.tunnel.closeInline",
-    "when": "tunnelCloseable && tunnelViewFocus"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-search.action.remove",
-    "when": "fileMatchOrMatchFocus && searchViewletVisible"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-workbench.action.terminal.killInstance",
-    "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-workbench.action.terminal.sendSequence",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "-keybindings.editor.removeKeybinding",
-    "when": "inKeybindings && keybindingFocus && !inputFocus"
-  },
-  {
-    "key": "cmd+backspace",
-    "command": "deleteRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+delete",
-    "command": "-deleteRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "alt+up",
-    "command": "-editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+down",
-    "command": "-editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+up",
-    "command": "-editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+up",
-    "command": "cursorMove",
-    "args": {
-      "to": "up",
-      "by": "line",
-      "value": 10
+    {
+        "key": "cmd+/ cmd+/",
+        "command": "workbench.action.togglePanel"
     },
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+down",
-    "command": "cursorMove",
-    "args": {
-      "to": "down",
-      "by": "line",
-      "value": 10
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
     },
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+up",
-    "command": "cursorMove",
-    "args": {
-      "to": "up",
-      "by": "line",
-      "value": 10,
-      "select": true
+    {
+        "key": "cmd+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
     },
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+down",
-    "command": "cursorMove",
-    "args": {
-      "to": "down",
-      "by": "line",
-      "value": 10,
-      "select": true
+    {
+        "key": "cmd+d",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
-    "when": "editorTextFocus"
-  },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-debug.removeBreakpoint",
+        "when": "breakpointsFocused && !breakpointInputFocused"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditable && notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-debug.removeWatchExpression",
+        "when": "watchExpressionsFocused && !expressionSelected"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-notification.clear",
+        "when": "notificationFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-remote.tunnel.closeInline",
+        "when": "tunnelCloseable && tunnelViewFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-search.action.remove",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-workbench.action.terminal.killInstance",
+        "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-keybindings.editor.removeKeybinding",
+        "when": "inKeybindings && keybindingFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "deleteRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "-deleteRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10,
+            "select": true
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10,
+            "select": true
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    }
 ]
